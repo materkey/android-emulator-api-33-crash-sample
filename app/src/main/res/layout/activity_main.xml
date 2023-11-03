@@ -15,4 +15,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <com.example.myapplication.shimmer.ShimmerFrameLayout
+        android:id="@+id/category_skeleton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:shimmer_animationDuration="3000"
+        app:shimmer_autostart="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.example.myapplication.shimmer.ShimmerFrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
